@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cart List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+
+<body>
+
+    <div class="demo">
+        <div class=" logout">
+            <button onclick="logout()" id="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <div class="head">
+        <div class="navbar">
+            <p>Logo</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-b">
+            <div class="dropdown">
+                <select id="categoryDropdown" name="">
+                    <option value="1">Categories</option>
+                    <option value="1">Vegitables</option>
+                    <option value="2">Fruits</option>
+                    <option value="3">Dairy_items</option>
+                </select>
+            </div>
+
+            <div class="search">
+                <input type="search" id ="searchInput" placeholder="search">
+                <a href="#"><i class="fa fa-search solid" aria-hidden="true" id="searchButton" style="font-size: xx-large;"></i></a>
+            </div>   
+
+            <div class="count" id="cartButton">
+
+                <a href='#' class="custom-link"> <i class=" fa fa-shopping-cart " onclick="viewCart()" id="viewCart" aria-hidden="true"
+                        style="font-size: xx-large;"></i></a>
+                <!-- <i class="fa fa-shopping-cart solid" aria-hidden="true" style="font-size: xx-large;"></i> -->
+                <div id="cartcount">0</div>
+
+            </div>
+        </div>
+
+        <section id="product1" class="section-p1"></section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
