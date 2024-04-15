@@ -57,13 +57,47 @@ let categories = {
                 },
 
             ]
+        },
+        {
+            name: "Broccoli",
+            id: "4",
+            price: "4$",
+            image: "img4.jpg",
+            vendors: [{
+                    "name": "Mukesh bhai"
+                },
+                {
+                    "name": "Paresh bhai"
+                },
+                {
+                    "name": "Babu bhai"
+                },
+
+            ]
+        },
+        {
+            name: "Cabbage",
+            id: "5",
+            price: "4$",
+            image: "img5.jpg",
+            vendors: [{
+                    "name": "Mukesh bhai"
+                },
+                {
+                    "name": "Paresh bhai"
+                },
+                {
+                    "name": "Babu bhai"
+                },
+
+            ]
         }
     ],
     "Fruits": [{
             name: "Apples",
-            id: "4",
-            price: "5$",
-            image: "img4.jpg",
+            id: "6",
+            price: "6$",
+            image: "img6.jpg",
             vendors: [{
                     "name": "Ritesh bhai"
                 },
@@ -77,9 +111,41 @@ let categories = {
         },
         {
             name: "Mangoes",
-            id: "5",
+            id: "7",
             price: "6$",
-            image: "img5.jpg",
+            image: "img7.jpg",
+            vendors: [{
+                    "name": "Mahesh bhai"
+                },
+                {
+                    "name": "Jaysukh bhai"
+                },
+                {
+                    "name": "Pankaj bhai"
+                }
+            ]
+        },
+        {
+            name: "Mangoes",
+            id: "8",
+            price: "4$",
+            image: "img8.jpg",
+            vendors: [{
+                    "name": "Mahesh bhai"
+                },
+                {
+                    "name": "Jaysukh bhai"
+                },
+                {
+                    "name": "Pankaj bhai"
+                }
+            ]
+        },
+        {
+            name: "Mangoes",
+            id: "9",
+            price: "7$",
+            image: "img9.jpg",
             vendors: [{
                     "name": "Mahesh bhai"
                 },
@@ -93,9 +159,9 @@ let categories = {
         },
         {
             name: "Kiwis",
-            id: "6",
-            price: "4$",
-            image: "img6.jpg",
+            id: "10",
+            price: "6$",
+            image: "img10.jpg",
             vendors: [{
                     "name": "Hardik bhai"
                 },
@@ -111,9 +177,9 @@ let categories = {
     ],
     "Dairy_item": [{
             name: "Paneer",
-            id: "7",
+            id: "11",
             price: "5$",
-            image: "img7.jpg",
+            image: "img11.jpg",
             vendors: [{
                     "name": "Mohan bhai"
                 },
@@ -127,9 +193,41 @@ let categories = {
         },
         {
             name: "Sweets",
-            id: "8",
-            price: "3$",
-            image: "img8.jpg",
+            id: "12",
+            price: "4$",
+            image: "img12.jpg",
+            vendors: [{
+                    "name": "Bhavik bhai"
+                },
+                {
+                    "name": "Bhavesh bhai"
+                },
+                {
+                    "name": "Ajay bhai"
+                }
+            ]
+        },
+        {
+            name: "Sweets",
+            id: "13",
+            price: "7$",
+            image: "img13.jpg",
+            vendors: [{
+                    "name": "Bhavik bhai"
+                },
+                {
+                    "name": "Bhavesh bhai"
+                },
+                {
+                    "name": "Ajay bhai"
+                }
+            ]
+        },
+        {
+            name: "Sweets",
+            id: "14",
+            price: "6$",
+            image: "img14.jpg",
             vendors: [{
                     "name": "Bhavik bhai"
                 },
@@ -143,9 +241,9 @@ let categories = {
         },
         {
             name: "Milk",
-            id: "9",
-            price: "8$",
-            image: "img9.jpg",
+            id: "15",
+            price: "5$",
+            image: "img15.jpg",
             vendors: [{
                     "name": "Naresh bhai"
                 },
@@ -286,83 +384,3 @@ function navigatetoHome() {
     let domain = window.location.href.split("/").slice(0, 5).join("/");
     location.replace(`${domain}/ecommerce.html`);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// serch products 
-// function handleSearch() {
-//     let searchTerm = $("#searchInput").val().trim().toLowerCase();
-
-//     let searchResults = [];
-//     for (let key in categories) {
-//         categories[key].forEach(product => {
-//             if (product.name.toLowerCase().includes(searchTerm)) {
-//                 searchResults.push(product);
-//             }
-//         });
-//         displaySearchResults(searchResults);
-//     }
-// }
-
-// function displaySearchResults(results) {
-//     $("#product1").empty();
-
-//     if (results.length > 0) {
-//         results.forEach(product => {
-//             let html = `<div class="pro">
-//                             <img src="${product.image}">
-//                             <div class="desc">
-//                             <span>${product.name}</span>
-//                              <h6></h6>
-//                                     <div class="stars">
-//                                 <i class="fa fa-star" aria-hidden="true"></i>
-//                                 <i class="fa fa-star" aria-hidden="true"></i>
-//                                 <i class="fa fa-star" aria-hidden="true"></i>
-//                                 <i class="fa fa-star" aria-hidden="true"></i>
-//                                 <i class="fa fa-star" aria-hidden="true"></i>
-//                             </div>
-//                                 <h5>${product.price}</h5>
-                                
-//                             </div>
-//                             <a href="#" class="add" id="cart-${product.id}">
-//                                 <i class="fa fa-shopping-cart cart" style="font-size: xx-large" onclick='addToCart("${product.id}")' aria-hidden="true"></i>
-//                             </a>
-//                             </div>`;
-//             $("#product1").append(html);
-//         });
-//     } else {
-//         $("#product1").html("<p>No products found</p>");
-//     }
-// }
-
-// $("#searchButton").click(function () {
-//     handleSearch();
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // $("#searchInput").keypress(function (event) {
-// //     if (event.which === 13) {
-// //         handleSearch();
-// //     }
-// // })
