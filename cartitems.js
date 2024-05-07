@@ -44,7 +44,7 @@ let categories = {
         {
             name: "Tomatoes",
             id: "3",
-            price: "8$",
+            price: "6$",
             image: "img3.jpg",
             vendors: [{
                     "name": "Mukesh bhai"
@@ -54,14 +54,13 @@ let categories = {
                 },
                 {
                     "name": "Babu bhai"
-                },
-
+                }
             ]
         },
         {
-            name: "Broccoli",
+            name: "Carrots",
             id: "4",
-            price: "4$",
+            price: "3$",
             image: "img4.jpg",
             vendors: [{
                     "name": "Mukesh bhai"
@@ -71,12 +70,11 @@ let categories = {
                 },
                 {
                     "name": "Babu bhai"
-                },
-
+                }
             ]
         },
         {
-            name: "Cabbage",
+            name: "Sweetcorn",
             id: "5",
             price: "4$",
             image: "img5.jpg",
@@ -91,13 +89,47 @@ let categories = {
                 },
 
             ]
+        },
+        {
+            name: "Broccoli",
+            id: "6",
+            price: "9$",
+            image: "img6.jpg",
+            vendors: [{
+                    "name": "Mukesh bhai"
+                },
+                {
+                    "name": "Paresh bhai"
+                },
+                {
+                    "name": "Babu bhai"
+                },
+
+            ]
+        },
+        {
+            name: "Cabbage",
+            id: "7",
+            price: "4$",
+            image: "img7.jpg",
+            vendors: [{
+                    "name": "Mukesh bhai"
+                },
+                {
+                    "name": "Paresh bhai"
+                },
+                {
+                    "name": "Babu bhai"
+                },
+
+            ]
         }
     ],
     "Fruits": [{
-            name: "Apples",
-            id: "6",
-            price: "6$",
-            image: "img6.jpg",
+            name: "Kiwi",
+            id: "8",
+            price: "5$",
+            image: "img8.jpg",
             vendors: [{
                     "name": "Ritesh bhai"
                 },
@@ -111,40 +143,8 @@ let categories = {
         },
         {
             name: "Mangoes",
-            id: "7",
-            price: "6$",
-            image: "img7.jpg",
-            vendors: [{
-                    "name": "Mahesh bhai"
-                },
-                {
-                    "name": "Jaysukh bhai"
-                },
-                {
-                    "name": "Pankaj bhai"
-                }
-            ]
-        },
-        {
-            name: "Mangoes",
-            id: "8",
-            price: "4$",
-            image: "img8.jpg",
-            vendors: [{
-                    "name": "Mahesh bhai"
-                },
-                {
-                    "name": "Jaysukh bhai"
-                },
-                {
-                    "name": "Pankaj bhai"
-                }
-            ]
-        },
-        {
-            name: "Mangoes",
             id: "9",
-            price: "7$",
+            price: "6$",
             image: "img9.jpg",
             vendors: [{
                     "name": "Mahesh bhai"
@@ -158,10 +158,42 @@ let categories = {
             ]
         },
         {
-            name: "Kiwis",
+            name: "Apples",
             id: "10",
-            price: "6$",
+            price: "8$",
             image: "img10.jpg",
+            vendors: [{
+                    "name": "Mahesh bhai"
+                },
+                {
+                    "name": "Jaysukh bhai"
+                },
+                {
+                    "name": "Pankaj bhai"
+                }
+            ]
+        },
+        {
+            name: "Litchi",
+            id: "11",
+            price: "7$",
+            image: "img11.jpg",
+            vendors: [{
+                    "name": "Mahesh bhai"
+                },
+                {
+                    "name": "Jaysukh bhai"
+                },
+                {
+                    "name": "Pankaj bhai"
+                }
+            ]
+        },
+        {
+            name: "CusterdApples",
+            id: "12",
+            price: "7$",
+            image: "img12.jpg",
             vendors: [{
                     "name": "Hardik bhai"
                 },
@@ -173,13 +205,48 @@ let categories = {
                 },
 
             ]
-        }
+        },
+        {
+            name: "Pears",
+            id: "13",
+            price: "6$",
+            image: "img13.jpg",
+            vendors: [{
+                    "name": "Hardik bhai"
+                },
+                {
+                    "name": "Jignesh bhai"
+                },
+                {
+                    "name": "Nikunj bhai"
+                },
+
+            ]
+        },
+        {
+            name: "Avocado",
+            id: "14",
+            price: "5$",
+            image: "img14.jpg",
+            vendors: [{
+                    "name": "Hardik bhai"
+                },
+                {
+                    "name": "Jignesh bhai"
+                },
+                {
+                    "name": "Nikunj bhai"
+                },
+
+            ]
+        },
+        
     ],
     "Dairy_item": [{
-            name: "Paneer",
-            id: "11",
+            name: "Rasgulla",
+            id: "15",
             price: "5$",
-            image: "img11.jpg",
+            image: "img15.jpg",
             vendors: [{
                     "name": "Mohan bhai"
                 },
@@ -192,10 +259,10 @@ let categories = {
             ]
         },
         {
-            name: "Sweets",
-            id: "12",
+            name: "Shrikhand",
+            id: "16",
             price: "4$",
-            image: "img12.jpg",
+            image: "img16.jpg",
             vendors: [{
                     "name": "Bhavik bhai"
                 },
@@ -208,10 +275,10 @@ let categories = {
             ]
         },
         {
-            name: "Sweets",
-            id: "13",
+            name: "Paneer",
+            id: "17",
             price: "7$",
-            image: "img13.jpg",
+            image: "img17.jpg",
             vendors: [{
                     "name": "Bhavik bhai"
                 },
@@ -221,29 +288,62 @@ let categories = {
                 {
                     "name": "Ajay bhai"
                 }
+            ]
+        },
+        {
+            name: "Ice-cream",
+            id: "18",
+            price: "6$",
+            image: "img18.jpg",
+            vendors: [{
+                    "name": "Bhavik bhai"
+                },
+                {
+                    "name": "Bhavesh bhai"
+                },
+                {
+                    "name": "Ajay bhai"
+                }
+            ]
+        },
+        {
+            name: "Paneer",
+            id: "19",
+            price: "3$",
+            image: "img19.jpg",
+            vendors: [{
+                    "name": "Naresh bhai"
+                },
+                {
+                    "name": "Dilip bhai"
+                },
+                {
+                    "name": "Dipak bhai"
+                },
+
             ]
         },
         {
             name: "Sweets",
-            id: "14",
-            price: "6$",
-            image: "img14.jpg",
+            id: "20",
+            price: "72$",
+            image: "img20.jpg",
             vendors: [{
-                    "name": "Bhavik bhai"
+                    "name": "Naresh bhai"
                 },
                 {
-                    "name": "Bhavesh bhai"
+                    "name": "Dilip bhai"
                 },
                 {
-                    "name": "Ajay bhai"
-                }
+                    "name": "Dipak bhai"
+                },
+
             ]
-        },
-        {
+        },{
             name: "Milk",
-            id: "15",
-            price: "5$",
-            image: "img15.jpg",
+            id: "21",
+            price: "8$",
+            image: "img21.jpg",
             vendors: [{
                     "name": "Naresh bhai"
                 },
@@ -319,7 +419,7 @@ $(document).ready(function () {
 
 function getproducts() {
     for (let key in categories) {
-        let html = `<h2 style="color:blue;text-align:left;margin-top:30px;text-decoration:underline;text-decoration-style:single; font-size:xx-large;">${key}</h2><div class="pro-container">`;
+        let html = `<h2 style="color:black;text-align:left;margin:20px;text-decoration:none;text-decoration-style:single; font-size:x-large;">${key}</h2><div class="pro-container">`;
 
         categories[key].forEach(product => {
 
@@ -335,12 +435,15 @@ function getproducts() {
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                         <i class="fa fa-star" aria-hidden="true"></i>
                                     </div>
+                                    </div>
+                                    <div class="productcart">
                                     <h5>${product.price}</h5>
                                     
-                                </div>
                                 <a href="#" class="add" id="cart-${product.id}">
-                                    <i class="fa fa-shopping-cart cart" style="font-size: xx-large;margin-left :15px"; onclick='addToCart("${product.id}")' aria-hidden="true"></i>
+                                    <i class="fa fa-shopping-cart cart" style="font-size: xx-large;margin-bottom:20px; margin-left :15px"; onclick='addToCart("${product.id}")' aria-hidden="true"></i>
                                 </a>
+                                </div>
+
                             </div>`;
         });
 
@@ -371,7 +474,7 @@ function findProductById(productId) {
 //  logout
 function logout() {
     localStorage.removeItem("userId");
-    // window.location.href = "ecommerce.html";
+    window.location.href = "login.html";
     navigatetoHome();
 }
 
@@ -382,5 +485,5 @@ function viewCart() {
 
 function navigatetoHome() {
     let domain = window.location.href.split("/").slice(0, 5).join("/");
-    location.replace(`${domain}/ecommerce.html`);
+    location.replace(`${domain}/login.html`);
 }

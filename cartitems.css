@@ -39,24 +39,25 @@ body {
     font-weight: bold;
 }
 
-/* Navigation Menu */
+/* 
+Navigation Menu
 nav {
     position: relative;
 
-}
+} */
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #3eb8f0;
+    background-color: #75a9c2;
+    height: 80px;
 }
 
-.navbar p {
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(14, 14, 14);
-    margin-left: 40px;
+.navbar img {
+    height: 70px;
+    width: 70px;
+    margin: 30px;
 }
 
 .navbar ul {
@@ -67,8 +68,8 @@ nav {
 .navbar ul li a {
     padding: 7px 15px;
     font-size: xx-large;
-    font-weight: bold;
-    font-size: 25px;
+    /* font-weight: bold; */
+    font-size: 24px;
     color: #101010;
     text-decoration: none;
     margin-top: 50px;
@@ -86,7 +87,7 @@ nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
     /* margin-top: 20px; */
-    background-color: #3eb8f0;
+    /* background-color: #3eb8f0; */
 }
 
 /* For Mobile */
@@ -248,7 +249,7 @@ nav ul li a:hover {
 .custom-link {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     text-decoration: none;
     background-color: #722ed1;
     color: #ffffff;
@@ -383,10 +384,11 @@ nav ul li a:hover {
 }
 
 .dropdown {
-    width: 160px;
-    text-align: center;
+    /* width: 160px; */
+    /* text-align: center; */
     background-color: var(--white);
     border-radius: 3px;
+     padding-right: 20px;
 }
 
 
@@ -457,10 +459,12 @@ select:hover {
 
 #product1 {
     text-align: left;
-    background-color: url("https://www.google.com/imgres?q=background%20images&imgurl=https%3A%2F%2Fdm0qx8t0i9gc9.cloudfront.net%2Fthumbnails%2Fimage%2FrDtN98Qoishumwih%2Fabstract-blue-light-background_SvZPryOnfl_thumb.jpg&imgrefurl=https%3A%2F%2Fwww.storyblocks.com%2Fimages%2Fsearch%2Fbackground&docid=DWSQXJh8KmwuKM&tbnid=5Fqk6tLRligFSM&vet=12ahUKEwjC8YyB_7uFAxWhe_UHHQn4ArMQM3oECEYQAA..i&w=300&h=200&hcb=2&ved=2ahUKEwjC8YyB_7uFAxWhe_UHHQn4ArMQM3oECEYQAA");
+    background-color: whitesmoke;
 
 }
-
+.product{
+background-color: #1287A5;
+}
 #product1.pro {
     width: 25%;
     padding: 10px 12px;
@@ -527,7 +531,9 @@ select:hover {
 }
 
 #cartcount {
-    color: maroon;
+    color: black;
+    padding-left: 20px;
+    font-size: 30px;
 }
 
 #logout-btn {
@@ -553,29 +559,35 @@ select:hover {
 .pro-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 30px;
     box-shadow: #606063;
 }
 
 .pro {
-    width: 15%;
+    width: 12%;
     /* margin-left: 20px; */
-    margin: 20px 20px 20px 20px;
-    border: 1px solid #141010;
-    border-radius: 5px;
+    /* margin: 20px 20px 20px 20px; */
+    border: 1px solid #ae2424;
+    border-radius: 10px;
     box-sizing: border-box;
-    box-shadow: 2px 2px 4px #606063;
+    box-shadow: 1px 1px 5px #606063;
     /* padding: 10px; */
+    background-color: white;
+
 }
 
 .pro img {
     width: 100%;
     height: 185px;
     box-shadow: #606063;
+    border-radius: 25px;
+    padding: 10px;
+
 }
 
 .desc {
+    display: inline-block;
     margin-left: 20px;
     text-align: left;
     font-size: x-large;
@@ -585,7 +597,13 @@ select:hover {
     color: gold;
 }
 
-
+.productcart{
+    display: flex;
+    font-size: xx-large;
+    color: currentColor;
+    text-align: right;
+    justify-content: space-around;
+}
 /* Modal styles */
 .modal {
     display: none;
