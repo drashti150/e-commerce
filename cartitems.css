@@ -416,6 +416,7 @@ select:hover {
     align-items: center;
     justify-content: space-between;
     padding: 15px;
+    border-radius: 15px;
 }
 
 .search input {
